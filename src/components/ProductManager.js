@@ -2,7 +2,7 @@
 import { Console } from "console";
 import {promises as fs} from "fs"
 
-class ProducManager{
+export default class ProducManager{
     constructor(){
         this.patch = "./productos.txt";
         this.products = []
@@ -67,10 +67,18 @@ class ProducManager{
 
 }
 
-const productos = new ProducManager ();
+//const productos = new ProducManager ();
 
 /*productos.addProduct('Mango', 'Fruta', 150 , 'img1', 'abc123' , 5 );
-productos.addProduct('Coco', 'Fruta', 250 , 'img2', 'abc124',6 );*/
+productos.addProduct('Coco', 'Fruta', 250 , 'img2', 'abc124',6 );
+productos.addProduct('Fresa', 'Fruta', 60 , 'img3', 'abc125',52 );
+productos.addProduct('Limon', 'Fruta', 20 , 'img4', 'abc126',16 );
+productos.addProduct('Pera', 'Fruta', 50 , 'img5', 'abc127',61 );
+productos.addProduct('Manzana', 'Fruta', 450 , 'img6', 'abc128',25 );
+productos.addProduct('Uva', 'Fruta', 550 , 'img7', 'abc129',8 );
+productos.addProduct('Guayaba', 'Fruta', 150 , 'img8', 'abc130',10 );
+productos.addProduct('Naranja', 'Fruta', 350 , 'img9', 'abc131',9 );
+productos.addProduct('Piña', 'Fruta', 650 , 'img10', 'abc132',10 );*/
 
 
 //productos.getProducts()
@@ -79,7 +87,7 @@ productos.addProduct('Coco', 'Fruta', 250 , 'img2', 'abc124',6 );*/
 
 //productos.deleteProductById(2)
 
-productos.updateProducts({
+/*productos.updateProducts({
     titulo: 'Mango',     
     descripcion: 'Fruta',
     precio: 4150,
@@ -87,4 +95,4 @@ productos.updateProducts({
     codigo: 'abc123',    
     stock: 5,
     id: 1
-})
+})*/
